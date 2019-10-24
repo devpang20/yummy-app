@@ -1,28 +1,32 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+       <yummyHeader></yummyHeader>
+       <yummyNav></yummyNav>
+       <yummyFooter></yummyFooter>
+        <yummyList></yummyList>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import yummyList from './components/yummyList.vue'
+import yummyHeader from './components/yummyHeader.vue'
+import yummyNav from './components/yummyNav.vue'
+import yummyFooter from './components/yummyFooter.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    'yummyList' : yummyList,
+    'yummyHeader' : yummyHeader,
+    'yummyNav' : yummyNav,
+    'yummyFooter' : yummyFooter,
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);
 }
 </style>
