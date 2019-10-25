@@ -16,7 +16,6 @@
             <el-col :span="8"><div class="grid-content bg-purple"><router-link to="/list"><el-button style="padding:40px;" circle>메뉴</el-button></router-link></div></el-col>
         </el-row>
       </nav> 
-
 </template>
 
 <script>

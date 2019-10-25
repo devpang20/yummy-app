@@ -1,24 +1,19 @@
 <template>
   <div id="app">
        <yummyHeader></yummyHeader>
-       <yummyNav></yummyNav>
+       <router-view></router-view>
        <yummyFooter></yummyFooter>
-        <yummyList></yummyList>
   </div>
 </template>
 
 <script>
-import yummyList from './components/yummyList.vue'
 import yummyHeader from './components/yummyHeader.vue'
-import yummyNav from './components/yummyNav.vue'
 import yummyFooter from './components/yummyFooter.vue'
 
 export default {
   name: 'app',
   components: {
-    'yummyList' : yummyList,
     'yummyHeader' : yummyHeader,
-    'yummyNav' : yummyNav,
     'yummyFooter' : yummyFooter,
   }
 }
