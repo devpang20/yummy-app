@@ -15,7 +15,7 @@ export default {
   components: {
     'yummyHeader' : yummyHeader,
     'yummyFooter' : yummyFooter,
-  }
+  },
 }
 </script>
 

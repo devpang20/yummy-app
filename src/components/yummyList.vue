@@ -18,9 +18,13 @@
    export default {
     data () {
       return {
+        cid: 0,
         count: 10,
         loading: false
       }
+    },
+    created: {
+
     },
     computed: {
       noMore () {
