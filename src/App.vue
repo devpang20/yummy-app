@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-       <yummyHeader></yummyHeader>
+       <yummy-header></yummy-header>
        <router-view></router-view>
-       <yummyFooter></yummyFooter>
+       <yummy-footer></yummy-footer>
   </div>
 </template>
 
@@ -13,8 +13,8 @@ import yummyFooter from './components/yummyFooter.vue'
 export default {
   name: 'app',
   components: {
-    'yummyHeader' : yummyHeader,
-    'yummyFooter' : yummyFooter,
+    yummyHeader,
+    yummyFooter,
   },
 }
 </script>
