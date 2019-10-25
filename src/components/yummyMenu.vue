@@ -1,8 +1,6 @@
 <template>
      <nav class="menu-nav">
-        <div>
-        </div>
-        <el-row :gutter="20">
+        <el-row :gutter="20">     
             <el-col :span="8"><div class="grid-content bg-purple"><router-link to="/list/cid"><el-button style="padding:40px;" circle>한국</el-button></router-link></div></el-col>
             <el-col :span="8"><div class="grid-content bg-purple"><router-link to="/list/jp"><el-button style="padding:40px;" circle>일본</el-button></router-link></div></el-col>
             <el-col :span="8"><div class="grid-content bg-purple"><router-link to="/list/en"><el-button style="padding:40px;" circle>미국</el-button></router-link></div></el-col>
@@ -35,7 +33,6 @@
         axios.get('http://yummy.taku.kr:5000/')
         .then(res => {
              res.data.data.forEach(item => window.console.log(item.name))
-           
         })
         .catch(res => {
           this.error = res.reponse.data
@@ -43,10 +40,8 @@
         .finally(()=>{
           this.loading = false;
         })
-  
       }
     }
-    
   }
 </script>
 

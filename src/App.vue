@@ -21,7 +21,7 @@ export default {
 
 <style>
 #app {
-  border: 1px solid #eee;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);
+  max-width: 510px;
+  margin: 50px auto;
 }
 </style>
